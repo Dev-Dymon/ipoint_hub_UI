@@ -1,0 +1,141 @@
+@media (max-width: 1024px) {
+    .course-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 970px) {
+    .nav-link {
+        display: none !important;
+    }
+
+    .nav-bar .nav-bar-btn .toggle-menu {
+        display: inline;
+    }
+
+    .benefit-section .benefit-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .course-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-bar {
+        padding: 20px 0;
+    }
+
+    .hero-section h3 {
+        font-size: 16px;
+    }
+
+    .hero-header {
+        font-size: 18px;
+    }
+
+    .logo-section {
+        flex-wrap: wrap !important;
+    }
+
+    .logo-section .logo-box {
+        height: 45px;
+        width: 120px;
+    }
+
+    .video-section .play-vid-icon::before {
+        width: 65px;
+        height: 65px;
+    }
+
+    .video-section .play-vid-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .video-section .play-vid-icon svg {
+        width: 30px;
+    }
+
+    .benefit-section .benefit-header .benefit-text p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .benefit-section .benefit-boxes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .benefit-section .benefit-boxes .benefit-box:nth-child(4),
+    .benefit-box:nth-child(5),
+    .benefit-box:nth-child(6) {
+        display: none;
+    }
+
+    .course-section .course-header .course-text p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .course-card {
+        padding: 20px;
+    }
+
+    .course-card .course-img {
+        height: 180px;
+    }
+
+    .course-card .course-info-head {
+        font-size: 12px;
+    }
+
+    .course-card .course-info-body h2 {
+        font-size: 20px;
+    }
+
+    .course-card .course-info-body p {
+        font-size: 15px;
+    }
+
+    .testimonial-text p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .testimonial-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .testimonial-card:nth-child(3),
+    .testimonial-card:nth-child(4),
+    .testimonial-card:nth-child(6) {
+        display: none;
+    }
+
+    .faqs {
+        padding: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .faqs-message h1 {
+        font-size: 30px;
+    }
+
+    .faqs .faqs-col2 .faqs-item .faqs-head {
+        font-size: 18px;
+    }
+
+    .faqs .faqs-col2 .faqs-item .faqs-content {
+        font-size: 15px;
+    }
+}
