@@ -55,5 +55,5 @@ This project is built using **only HTML, CSS, and JavaScript** (no frameworks), 
 
 ## 📬 Contact
 
-Built with ❤️ by <a href=''>Diamond Alex</a> 
+Built with ❤️ by <a href='https://wa.me/message/R3T7BM2QUP6AI1'>Diamond Alex</a> 
 Feel free to reach out for collaborations or suggestions.
