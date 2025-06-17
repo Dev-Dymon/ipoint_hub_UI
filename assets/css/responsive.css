@@ -2,6 +2,14 @@
     .course-list {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer .footer-col3{
+        grid-column: span 2;
+    }
 }
 
 @media (max-width: 970px) {
@@ -137,5 +145,14 @@
 
     .faqs .faqs-col2 .faqs-item .faqs-content {
         font-size: 15px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr !important;
+        gap: 35px;
+    }
+
+    .footer .footer-col3{
+        grid-column: span 1;
     }
 }

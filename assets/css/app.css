@@ -774,8 +774,9 @@ a {
     width: 100%;
 }
 
-.footer .footer-col2 div a{
-
+.footer .footer-col2 div a:hover{
+    color: var(--primary-color-dark);
+    transition: all 0.4s ease-in;
 }
 
 .footer .footer-col3 {
@@ -788,6 +789,7 @@ a {
     gap: 5px;
     grid-template-columns: repeat(5, 1fr);
     margin-bottom: 30px;
+    margin-top: 15px;
 }
 .footer .footer-col3 .social a .social-icon {
     width: 45px;
@@ -804,5 +806,24 @@ a {
     color: var(--color-white);
 }
 .footer .footer-col3 .newsletter{
-    
+    position: relative;
+    width: 100%;
+}
+.footer .footer-col3 .newsletter .input{
+    height: 45px;
+    display: block;
+    width: 100%;
+    border: 2px var(--border-color) solid;
+    border-radius: 8px;
+    outline: none;
+    padding-inline: 10px;
+}
+.footer .footer-col3 .newsletter .input:focus{
+    border: 2px var(--secondary-color) solid;
+}
+.footer .footer-col3 .newsletter button{
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    transform: translate(0%, -50%);
 }
