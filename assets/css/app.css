@@ -146,7 +146,7 @@ a {
 
 .nav-bar .nav-bar-nav .nav-bar-logo {
     width: 95px;
-    height: 60px;
+    /* height: 60px; */
     overflow: hidden;
 }
 
@@ -733,7 +733,8 @@ a {
 .footer {
     background: var(--color-white);
     padding-inline: 10%;
-    padding-block: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     place-items: center;
@@ -826,4 +827,19 @@ a {
     top: 50%;
     right: 2px;
     transform: translate(0%, -50%);
+}
+
+
+/* bottom bar */
+.bottom_bar{
+    background: var(--color-white);
+    padding-inline: 5%;
+}
+.bottom_bar div{
+    border-top: 3px solid var(--bg-color);
+}
+.bottom_bar p{
+    width: 100%;
+    text-align: center;
+    padding-block: 20px;
 }
