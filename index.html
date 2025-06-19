@@ -24,6 +24,15 @@
             background-position: center;
             background-size: cover;
         }
+
+        @media (max-width: 500px) {
+
+            .course-card:nth-child(4),
+            .course-card:nth-child(5),
+            .course-card:nth-child(6) {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -191,8 +200,8 @@
                 </svg>
             </div>
             <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/dPMk6_HTBq8?si=o0-w1JOt8cIlEEGB"
-                    title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/dPMk6_HTBq8?si=o0-w1JOt8cIlEEGB" title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>

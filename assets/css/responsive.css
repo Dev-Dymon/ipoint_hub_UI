@@ -133,11 +133,6 @@
         padding: 20px;
     }
 
-    .course-card:nth-child(4),
-    .course-card:nth-child(5),
-    .course-card:nth-child(6) {
-        display: none;
-    }
 
     .course-card .course-img {
         height: 180px;
