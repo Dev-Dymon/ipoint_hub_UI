@@ -35,6 +35,29 @@ dropbtn.addEventListener('click', () => {
     }
 });
 
+
+// opening video modal
+let vid_open_btn = document.getElementById('vid-icon');
+
+vid_open_btn.addEventListener('click', (e)=>  {
+    e.preventDefault();
+    let video_modal = document.getElementById('video-modal');
+
+    video_modal.classList.add('video-modal-active');
+});
+
+// closing video modal
+let vid_close_btn = document.getElementById('close-vide0');
+
+vid_close_btn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    let video_modal = document.getElementById('video-modal');
+
+    video_modal.classList.remove('video-modal-active');
+});
+
+
+
 // for FAQ's section
 let head = document.querySelectorAll('.faqs-head');
 let content = document.querySelectorAll('.faqs-conten');

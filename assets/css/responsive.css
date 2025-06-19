@@ -1,4 +1,10 @@
 @media (max-width: 1024px) {
+
+    .video-modal .video-wrapper iframe {
+        height: 450px !important;
+        width: 100% !important;
+    }
+
     .course-list {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -90,6 +96,15 @@
 
     .video-section .play-vid-icon svg {
         width: 30px;
+    }
+
+    .video-modal {
+        padding-inline: 5px !important;
+    }
+
+    .video-modal .video-wrapper iframe {
+        height: 250px !important;
+        width: 100% !important;
     }
 
     .benefit-section .benefit-header .benefit-text p {

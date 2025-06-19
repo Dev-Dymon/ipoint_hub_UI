@@ -28,6 +28,7 @@
 
 body {
     background: var(--bg-color);
+    position: relative;
 }
 
 a {
@@ -102,6 +103,7 @@ a {
     border-radius: 5px;
     border: 1px solid var(--border-color);
     width: fit-content;
+    font-size: 13px;
 }
 
 /* ========================================================================================================== */
@@ -452,6 +454,52 @@ a {
     color: var(--color-white);
 }
 
+.video-modal {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #000000d3;
+    z-index: 800;
+    top: 0;
+    left: 0;
+    /* scale: 0; */
+    opacity: 0;
+    transform: translateY(-120%);
+    padding-inline: 10%;
+    transition: all 0.7s ease-in;
+}
+
+.video-modal-active{
+    transition: all 0.7s ease-in;
+    opacity: 1;
+    /* scale: 1; */
+    transform: translateY(0%);
+}
+
+.close-vid-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: var(--color-white);
+    border-radius: 50%;
+}
+
+.video-modal .video-wrapper {
+    display: grid;
+    place-items: center;
+    height: inherit;
+}
+
+.video-modal .video-wrapper iframe {
+    height: 80%;
+    width: 80%;
+}
+
 /* benefit section */
 .benefit-section {
     margin-block: 80px;
@@ -583,6 +631,7 @@ a {
 
 .course-card .course-info-head p {
     font-weight: 500;
+    font-size: 13px;
 }
 
 .course-card .course-info-body {
@@ -775,7 +824,7 @@ a {
     width: 100%;
 }
 
-.footer .footer-col2 div a:hover{
+.footer .footer-col2 div a:hover {
     color: var(--primary-color-dark);
     transition: all 0.4s ease-in;
 }
@@ -784,7 +833,7 @@ a {
     width: 100% !important;
 }
 
-.footer .footer-col3 .social{
+.footer .footer-col3 .social {
     display: grid;
     place-items: center;
     gap: 5px;
@@ -792,6 +841,7 @@ a {
     margin-bottom: 30px;
     margin-top: 15px;
 }
+
 .footer .footer-col3 .social a .social-icon {
     width: 45px;
     height: 45px;
@@ -802,15 +852,18 @@ a {
     transition: all 0.4s ease-in;
     color: black;
 }
-.footer .footer-col3 .social a .social-icon:hover{
+
+.footer .footer-col3 .social a .social-icon:hover {
     background: var(--primary-color-dark);
     color: var(--color-white);
 }
-.footer .footer-col3 .newsletter{
+
+.footer .footer-col3 .newsletter {
     position: relative;
     width: 100%;
 }
-.footer .footer-col3 .newsletter .input{
+
+.footer .footer-col3 .newsletter .input {
     height: 45px;
     display: block;
     width: 100%;
@@ -819,10 +872,12 @@ a {
     outline: none;
     padding-inline: 10px;
 }
-.footer .footer-col3 .newsletter .input:focus{
+
+.footer .footer-col3 .newsletter .input:focus {
     border: 2px var(--secondary-color) solid;
 }
-.footer .footer-col3 .newsletter button{
+
+.footer .footer-col3 .newsletter button {
     position: absolute;
     top: 50%;
     right: 2px;
@@ -831,14 +886,16 @@ a {
 
 
 /* bottom bar */
-.bottom_bar{
+.bottom_bar {
     background: var(--color-white);
     padding-inline: 5%;
 }
-.bottom_bar div{
+
+.bottom_bar div {
     border-top: 3px solid var(--bg-color);
 }
-.bottom_bar p{
+
+.bottom_bar p {
     width: 100%;
     text-align: center;
     padding-block: 20px;

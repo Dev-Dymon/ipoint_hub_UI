@@ -19,7 +19,7 @@
     <!-- vendor files -->
     <style>
         .video-section {
-            background: linear-gradient(0deg, #60fb7780, #60fb773b), url("assets/image/Container.jpg");
+            background: linear-gradient(0deg, #268d35b6, #50d16346), url("assets/image/Container.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -173,7 +173,7 @@
 
         <!-- video section -->
         <div class="video-section" data-aos="fade-up" data-aos-delay="200">
-            <div class="play-vid-icon">
+            <div class="play-vid-icon" id="vid-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
                     <path
                         d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
@@ -181,6 +181,24 @@
             </div>
         </div>
         <!-- video section -->
+
+        <!-- video modal -->
+        <div class="video-modal" id="video-modal">
+            <div class="close-vid-modal" id="close-vide0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-2">
+                    <path
+                        d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                </svg>
+            </div>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/dPMk6_HTBq8?si=o0-w1JOt8cIlEEGB"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <!-- video modal -->
 
 
         <!-- benefit secction -->
