@@ -115,17 +115,19 @@ a {
     padding: 10px 3%;
 }
 
-.header-section .topbar-section {
+.topbar-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
     padding-block: 10px;
     background: var(--primary-color);
     border-radius: 8px;
+    margin-top: 10px;
+    margin-inline: 3%;
 }
 
-.header-section .topbar-section a {
+.topbar-section a {
     color: var(--color-white);
     font-size: 14px;
 }
@@ -208,6 +210,8 @@ a {
     z-index: 40;
     background: #00000073;
     right: -100%;
+    top: 0;
+    bottom: 0;
     transition: 0.6s ease-in;
     cursor: not-allowed;
 }
@@ -728,18 +732,20 @@ a {
 .testimonial-list .testimonial-card .card-footer {
     background: var(--color-white-alt);
     border-top: 2px solid var(--bg-color);
-    padding: 18px 25px;
+    padding: 10px 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.testimonial-list .testimonial-card .card-footer div {
+.testimonial-list .testimonial-card .card-footer .user-detail {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.testimonial-list .testimonial-card .card-footer div .name {
+.testimonial-list .testimonial-card .card-footer .user-detail .name {
     margin-left: 10px;
     font-weight: 600;
 }
