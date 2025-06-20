@@ -660,6 +660,35 @@ a {
     width: 100%;
 }
 
+.course-paination{
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+}
+.course-paination .page-wrapper{
+    width: fit-content;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+.course-paination .page-wrapper .page{
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    background: var(--primary-color);
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.4s ease-in;
+    font-weight: bold;
+}
+.course-paination .page-wrapper .page:hover{
+    background: var(--secondary-color);
+    color: var(--primary-color-dark);
+}
+
 
 /* testimoial section */
 .testimonial-section {
@@ -796,7 +825,7 @@ a {
     width: 100%;
 }
 
-.footer .footer-col1 .foooter-logo {}
+/* .footer .footer-col1 .foooter-logo {} */
 
 .footer .footer-col1 .foooter-logo img {
     width: 100px;
