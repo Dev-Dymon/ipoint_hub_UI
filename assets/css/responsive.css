@@ -1,199 +1,199 @@
 @media (max-width: 1024px) {
+  .video-modal .video-wrapper iframe {
+    height: 450px !important;
+    width: 100% !important;
+  }
 
-    .video-modal .video-wrapper iframe {
-        height: 450px !important;
-        width: 100% !important;
-    }
+  .course-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .course-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .footer {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .footer .footer-col3 {
-        grid-column: span 2;
-    }
+  .footer .footer-col3 {
+    grid-column: span 2;
+  }
 }
 
 @media (max-width: 970px) {
-    .nav-link {
-        display: none !important;
-    }
+  .nav-link {
+    display: none !important;
+  }
 
-    .nav-bar .nav-bar-btn .toggle-menu {
-        display: inline;
-    }
+  .nav-bar .nav-bar-btn .toggle-menu {
+    display: inline;
+  }
 
-    .benefit-section .benefit-boxes {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .benefit-section .benefit-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-    .testimonial-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .testimonial-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .course-list {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .course-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    .footer {
-        padding-inline: 5% !important;
-    }
+  .footer {
+    padding-inline: 5% !important;
+  }
 }
 
 @media (max-width: 500px) {
+  .topbar-section p {
+    font-size: 12px;
+  }
 
-    .topbar-section p {
-        font-size: 12px;
-    }
+  .nav-bar {
+    padding: 20px 0;
+  }
 
-    .nav-bar {
-        padding: 20px 0;
-    }
+  .nav-bar .nav-bar-nav .nav-bar-logo {
+    width: 75px;
+    overflow: hidden;
+  }
 
-    .nav-bar .nav-bar-nav .nav-bar-logo {
-        width: 75px;
-        overflow: hidden;
-    }
+  .hero-section h3 {
+    font-size: 16px;
+  }
 
-    .hero-section h3 {
-        font-size: 16px;
-    }
+  .hero-section .hero-box {
+    transform: scale(0.9);
+  }
 
+  .hero-header {
+    font-size: 18px;
+    text-align: center;
+  }
 
-    .hero-section .hero-box {
-        transform: scale(0.9);
-    }
+  .logo-section {
+    flex-wrap: wrap !important;
+  }
 
-    .hero-header {
-        font-size: 18px;
-        text-align: center;
-    }
+  .logo-section .logo-box {
+    height: 45px;
+    width: 120px;
+  }
 
-    .logo-section {
-        flex-wrap: wrap !important;
-    }
+  .video-section .play-vid-icon::before {
+    width: 65px;
+    height: 65px;
+  }
 
-    .logo-section .logo-box {
-        height: 45px;
-        width: 120px;
-    }
+  .video-section .play-vid-icon {
+    width: 55px;
+    height: 55px;
+  }
 
-    .video-section .play-vid-icon::before {
-        width: 65px;
-        height: 65px;
-    }
+  .video-section .play-vid-icon svg {
+    width: 30px;
+  }
 
-    .video-section .play-vid-icon {
-        width: 55px;
-        height: 55px;
-    }
+  .video-modal {
+    padding-inline: 5px !important;
+  }
 
-    .video-section .play-vid-icon svg {
-        width: 30px;
-    }
+  .video-modal .video-wrapper iframe {
+    height: 250px !important;
+    width: 100% !important;
+  }
 
-    .video-modal {
-        padding-inline: 5px !important;
-    }
+  .benefit-section .benefit-header .benefit-text p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 
-    .video-modal .video-wrapper iframe {
-        height: 250px !important;
-        width: 100% !important;
-    }
+  .benefit-section .benefit-boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    .benefit-section .benefit-header .benefit-text p {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
+  .benefit-section .benefit-boxes .benefit-box:nth-child(4),
+  .benefit-box:nth-child(5),
+  .benefit-box:nth-child(6) {
+    display: none;
+  }
 
-    .benefit-section .benefit-boxes {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .course-section .course-header .course-text p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 
-    .benefit-section .benefit-boxes .benefit-box:nth-child(4),
-    .benefit-box:nth-child(5),
-    .benefit-box:nth-child(6) {
-        display: none;
-    }
+  .course-card {
+    padding: 20px;
+  }
 
-    .course-section .course-header .course-text p {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-    }
+  .course-card .course-img {
+    height: 180px;
+  }
 
-    .course-card {
-        padding: 20px;
-    }
+  .course-card .course-info-head {
+    font-size: 12px;
+  }
 
+  .course-card .course-info-body h2 {
+    font-size: 20px;
+  }
 
-    .course-card .course-img {
-        height: 180px;
-    }
+  .course-card .course-info-body p {
+    font-size: 15px;
+  }
 
-    .course-card .course-info-head {
-        font-size: 12px;
-    }
+  .testimonial-text p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 
-    .course-card .course-info-body h2 {
-        font-size: 20px;
-    }
+  .testimonial-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    .course-card .course-info-body p {
-        font-size: 15px;
-    }
+  .testimonial-card:nth-child(3),
+  .testimonial-card:nth-child(4),
+  .testimonial-card:nth-child(6) {
+    display: none;
+  }
 
-    .testimonial-text p {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-    }
+  .faqs {
+    padding-block: 20px;
+    padding-inline: 10px;
+    grid-template-columns: 1fr;
+  }
 
-    .testimonial-list {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .faqs-message h1 {
+    font-size: 30px;
+  }
 
-    .testimonial-card:nth-child(3),
-    .testimonial-card:nth-child(4),
-    .testimonial-card:nth-child(6) {
-        display: none;
-    }
+  .faqs .faqs-col2 .faqs-item .faqs-head {
+    font-size: 18px;
+  }
 
-    .faqs {
-        padding-block: 20px;
-        padding-inline: 10px;
-        grid-template-columns: 1fr;
-    }
+  .faqs .faqs-col2 .faqs-item .faqs-content {
+    font-size: 15px;
+  }
 
-    .faqs-message h1 {
-        font-size: 30px;
-    }
+  .footer {
+    grid-template-columns: 1fr !important;
+    gap: 35px;
+  }
 
-    .faqs .faqs-col2 .faqs-item .faqs-head {
-        font-size: 18px;
-    }
+  .footer .footer-col2 div {
+    justify-content: start;
+  }
 
-    .faqs .faqs-col2 .faqs-item .faqs-content {
-        font-size: 15px;
-    }
+  .footer .footer-col3 {
+    grid-column: span 1;
+  }
 
-    .footer {
-        grid-template-columns: 1fr !important;
-        gap: 35px;
-    }
-
-    .footer .footer-col2 div {
-        justify-content: start;
-    }
-
-    .footer .footer-col3 {
-        grid-column: span 1;
-    }
+  .mv-statement {
+    grid-template-columns: 1fr;
+  }
 }
