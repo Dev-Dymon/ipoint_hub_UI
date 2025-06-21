@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title and favicon -->
+    <title>Ipoint Hub</title>
+    <link rel="shortcut icon" href="assets/image/ipoint logo 1.png" type="image/x-icon">
+
+
+    <!-- css links -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- vendor files -->
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+    <!-- vendor files -->
+    <style>
+        .video-section {
+            background: linear-gradient(0deg, #268d35b6, #50d16346), url("assets/image/Container.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        @media (max-width: 500px) {
+
+            .course-card:nth-child(4),
+            .course-card:nth-child(5),
+            .course-card:nth-child(6) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- overlay -->
+    <div class="overlay"></div>
+    <!-- overlay -->
+
+    <!-- topbar -->
+    <div class="topbar-section">
+        <a href="courses.html">
+            <p>Free Courses 🌟 Sale Ends Soon, Get It Now <i class="fas fa-arrow-right"></i></p>
+        </a>
+    </div>
+    <!-- topbar -->
+
+    <!-- header section -->
+    <div class="header-section">
+        <!-- navbar -->
+        <div class="nav-bar">
+            <div class="nav-bar-nav">
+                <a href="index.html">
+                    <div class="nav-bar-logo">
+                        <img src="assets/image/ipoint logo 1.png" alt="">
+                    </div>
+                </a>
+
+                <ul class="nav-link">
+                    <li class="nav-link-item active"><a href="index.html">Home</a></li>
+                    <li class="nav-link-item"><a href="courses.html">Courses</a></li>
+                    <li class="nav-link-item"><a href="about.html">About us</a></li>
+                    <li class="nav-link-item"><a href="services.html">Services</a></li>
+                    <li class="nav-link-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-bar-btn">
+                <a href="signup.html">
+                    <button class="btn btn-light">Sign Up</button>
+                </a>
+                <a href="login.html">
+                    <button class="btn btn-main">login</button>
+                </a>
+
+                <div class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75Zm7 10.5a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1-.75-.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header section -->
+
+    <!-- sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html">
+                <div class="sidebar-logo">
+                    <img src="assets/image/ipoint logo 2.png" alt="" loading="lazy">
+                </div>
+            </a>
+            <div class="close-sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                    <path
+                        d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="sidebar-body">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="has-submenu">
+                    <div class="sub-menu-head">
+                        <a href="javaScript:void(0)">Courses</a>
+                        <i class="fas fa-angle-up" id="direction"></i>
+                    </div>
+                    <div class="sub-menu">
+                        <hr>
+                        <ul>
+                            <li><a href="courses.html">Development</a></li>
+                            <li><a href="courses.html">Design</a></li>
+                            <li><a href="courses.html">Analysis</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">My Account</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- sidebar -->
+
+
+    <!-- our team section -->
+    <div class="our-team">
+        <div class="our-team-wrapper" id="our-team-wrapper">
+
+            <div class="team-card">
+                <div class="team-card-img">
+                    <img src="assets/image/team/team_1.jpg" alt="" width="100%">
+                </div>
+                <div class="team-card-info">
+                    <h3>Sunday God'stime</h3>
+                    <p>CEO at Ipoint Hub</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-card-img">
+                    <img src="assets/image/team/team_2.jpg" alt="" width="100%">
+                </div>
+                <div class="team-card-info">
+                    <h3>Emmanuel Edet</h3>
+                    <p>Manager at Ipoint Hub</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-card-img">
+                    <img src="assets/image/team/team_3.jpg" alt="" width="100%">
+                </div>
+                <div class="team-card-info">
+                    <h3>Emmanson Fortune</h3>
+                    <p>Designer at Ipoint Hub</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-card-img">
+                    <img src="assets/image/team/team_4.jpg" alt="" width="100%">
+                </div>
+                <div class="team-card-info">
+                    <h3>Alex Diamond</h3>
+                    <p>Developer at Ipoint Hub</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-card-img">
+                    <img src="assets/image/team/team_5.jpg" alt="" width="100%">
+                </div>
+                <div class="team-card-info">
+                    <h3>Success Oden</h3>
+                    <p>Instructor at Ipoint Hub</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-card-img">
+                    <img src="assets/image/team/team_6.jpg" alt="" width="100%">
+                </div>
+                <div class="team-card-info">
+                    <h3>Favour Dickson</h3>
+                    <p>Designer at Ipoint Hub</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-card-img">
+                    <img src="assets/image/team/team_1.jpg" alt="" width="100%">
+                </div>
+                <div class="team-card-info">
+                    <h3>Abasiama Umoh</h3>
+                    <p>Instructor at Ipoint Hub</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="directions">
+            <div class="direction-wrapper">
+                <div class="direction" id="team-card-prev"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="direction" id="team-card-next"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <!-- our team section -->
+
+    <!-- page content -->
+    <div class="main-content">
+
+    </div>
+    <!-- page content -->
+
+    <!-- back to top -->
+    <div class="back-to-top-btn" id="back-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- back to top -->
+
+    <!-- footer section -->
+    <div class="footer" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="footer-col1">
+            <a href="index.html">
+                <div class="foooter-logo">
+                    <img src="assets/image/ipoint logo 1.png" alt="" loading="lazy">
+                </div>
+            </a>
+            <div class="footer-info">
+                <div>
+                    <p><i class="fas fa-envelope"></i> ipointhub01@gmail.com</p>
+                </div>
+                <div>
+                    <p><i class="fas fa-phone-volume"></i> +234 901 959 2200</p>
+                </div>
+                <div>
+                    <p><i class="fas fa-location-dot"></i> 4 Paul Ekpeowo, By Ekpri Nsukara, Nwaniba road, Uyo, Nigeria
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-col2">
+            <div>
+                <h3>Navigations</h3>
+                <a href="index.html">Home</a>
+                <a href="benefits.html">Benefits</a>
+                <a href="courses.html">Our Courses</a>
+                <a href="testimonials.html">Our Testimonials</a>
+                <a href="faqs.html">Our FAQ</a>
+            </div>
+            <div>
+                <h3>About Us</h3>
+                <a href="about.html">About</a>
+                <a href="about.html">Company</a>
+                <a href="about.html">Our Goals</a>
+                <a href="about.html">Our Policy</a>
+            </div>
+        </div>
+
+        <div class="footer-col3">
+            <h3>Social Profiles</h3>
+            <div class="social">
+                <a href="https://web.facebook.com/ipointhub">
+                    <div class="social-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </a>
+                <a href="https://x.com/Ipointhubict">
+                    <div class="social-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/company/ipoint-hub/">
+                    <div class="social-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </a>
+                <a href="http://wa.me/+2349019592200">
+                    <div class="social-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/ipointhub/">
+                    <div class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </a>
+            </div>
+            <h3>Newsletter</h3>
+            <div class="newsletter">
+                <form action="" method="POST">
+                    <input type="email" name="email" class="input" placeholder="your email">
+                    <button class="btn btn-main">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- footer section -->
+
+    <!-- bottom bar -->
+    <div class="bottom_bar" data-aos-delay="200">
+        <div>
+        </div>
+        <p>© 2025 Ipoint Hub V4. All rights reserved.</p>
+    </div>
+    <!-- bottom bar -->
+
+    <!-- script section -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- vendor js files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- vendor js files -->
+</body>
+
+</html>
