@@ -39,7 +39,7 @@ dropbtn.addEventListener('click', () => {
 // opening video modal
 let vid_open_btn = document.getElementById('vid-icon');
 
-vid_open_btn.addEventListener('click', (e)=>  {
+vid_open_btn.addEventListener('click', (e) => {
     e.preventDefault();
     let video_modal = document.getElementById('video-modal');
 
@@ -49,7 +49,7 @@ vid_open_btn.addEventListener('click', (e)=>  {
 // closing video modal
 let vid_close_btn = document.getElementById('close-vide0');
 
-vid_close_btn.addEventListener('click', (e)=>{
+vid_close_btn.addEventListener('click', (e) => {
     e.preventDefault();
     let video_modal = document.getElementById('video-modal');
 
@@ -82,3 +82,23 @@ for (let i = 0; i < head.length; i++) {
     }
 
 }
+
+
+// back to top button
+let bttb = document.getElementById('back-to-top-btn');
+
+window.addEventListener('scroll', ()=>{
+    if (window.scrollY > 100) {
+        bttb.classList.add('back-to-top-btn-active');
+    }else {
+        bttb.classList.remove('back-to-top-btn-active');
+    }
+});
+
+
+bttb.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+})

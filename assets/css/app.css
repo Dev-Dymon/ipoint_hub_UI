@@ -106,6 +106,31 @@ a {
     font-size: 13px;
 }
 
+.back-to-top-btn{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    background: var(--primary-color);
+    color: var(--color-white);
+    z-index: 20;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: transform 0.4s ease-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.back-to-top-btn-active{
+    transform: translateY(0px);
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /* ========================================================================================================== */
 /* homepage styles */
 
@@ -532,6 +557,12 @@ a {
     padding: 25px;
     border-radius: 8px;
     position: relative;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+
+.benefit-section .benefit-boxes .benefit-box:hover{
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.226);
 }
 
 .benefit-section .benefit-boxes .benefit-box h1 {
@@ -600,6 +631,11 @@ a {
     align-items: start;
     flex-direction: column;
     border-radius: 10px;
+    transition: all 0.5s ease-in;
+}
+
+.course-card:hover {
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.226);
 }
 
 .course-card .course-img {
@@ -721,6 +757,12 @@ a {
     display: grid;
     border-radius: 10px;
     overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+.testimonial-list .testimonial-card:hover{
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.226);
 }
 
 .testimonial-list .testimonial-card .card-header {
