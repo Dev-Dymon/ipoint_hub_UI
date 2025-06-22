@@ -36,6 +36,24 @@ dropbtn.addEventListener('click', () => {
 });
 
 
+// back to top button
+let bttb = document.getElementById('back-to-top-btn');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        bttb.classList.add('back-to-top-btn-active');
+    } else {
+        bttb.classList.remove('back-to-top-btn-active');
+    }
+});
+bttb.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+})
+
+
 // opening video modal
 let vid_open_btn = document.getElementById('vid-icon');
 
@@ -84,44 +102,26 @@ for (let i = 0; i < head.length; i++) {
 }
 
 
-// back to top button
-let bttb = document.getElementById('back-to-top-btn');
-
-window.addEventListener('scroll', ()=>{
-    if (window.scrollY > 100) {
-        bttb.classList.add('back-to-top-btn-active');
-    }else {
-        bttb.classList.remove('back-to-top-btn-active');
-    }
-});
-bttb.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-})
-
-
 
 // code for team slider section
-        let wrapper = document.getElementById('our-team-wrapper');
-        // let width = getComputedStyle(wrapper).width;
-        let width = wrapper.clientWidth;
+let wrapper = document.getElementById('our-team-wrapper');
+// let width = getComputedStyle(wrapper).width;
+let width = wrapper.clientWidth;
 
-        let prevBtn = document.getElementById('team-card-prev');
-        let nextBtn = document.getElementById('team-card-next');
+let prevBtn = document.getElementById('team-card-prev');
+let nextBtn = document.getElementById('team-card-next');
 
-        // move to the right
-        let currentOffset = 0; // Keep track of the current X offset
-        const slideWidth = 280; // The amount to move per click
+// move to the right
+let currentOffset = 0; // Keep track of the current X offset
+const slideWidth = 280; // The amount to move per click
 
-        console.log(width);
-        nextBtn.addEventListener('click', () => {
-            currentOffset -= slideWidth; // Move left by slideWidth
-            wrapper.style.transform = `translateX(${currentOffset}px)`;
-        });
+console.log(width);
+nextBtn.addEventListener('click', () => {
+    currentOffset -= slideWidth; // Move left by slideWidth
+    wrapper.style.transform = `translateX(${currentOffset}px)`;
+});
 
-        prevBtn.addEventListener('click', () => {
-            currentOffset += slideWidth; // Move left by slideWidth
-            wrapper.style.transform = `translateX(${currentOffset}px)`;
-        });
+prevBtn.addEventListener('click', () => {
+    currentOffset += slideWidth; // Move left by slideWidth
+    wrapper.style.transform = `translateX(${currentOffset}px)`;
+});

@@ -36,7 +36,7 @@ a {
     color: var(--text-color);
 }
 
-p{
+.p{
     color: var(--text-color);
 }
 
@@ -1076,7 +1076,7 @@ p{
 
 .our-team .our-team-wrapper .team-card .team-card-info {
     position: absolute;
-    bottom: 30px;
+    bottom: 15px;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
@@ -1093,7 +1093,7 @@ p{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
 }
 .mv-statement .mv-box{
     background: var(--color-white);
