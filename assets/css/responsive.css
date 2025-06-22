@@ -28,7 +28,6 @@
 }
 
 @media (max-width: 970px) {
-
 	.benefit-section .benefit-boxes {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -45,6 +44,11 @@
 
 	.footer {
 		padding-inline: 5% !important;
+	}
+
+	.contact-box .contact-col {
+		background: var(--color-white);
+		padding: 40px;
 	}
 }
 
@@ -186,5 +190,18 @@
 
 	.mv-statement {
 		grid-template-columns: 1fr;
+	}
+
+	.contact-box {
+		grid-template-columns: 1fr;
+	}
+
+	.contact-box .contact-col {
+		padding: 20px;
+	}
+
+	.contact-box-1 form .form-col {
+		grid-template-columns: 1fr;
+		gap: 10px;
 	}
 }
