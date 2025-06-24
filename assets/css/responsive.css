@@ -25,6 +25,10 @@
 	.footer .footer-col3 {
 		grid-column: span 2;
 	}
+
+	.auth-content {
+		grid-template-columns: 1fr;
+	}
 }
 
 @media (max-width: 970px) {
@@ -50,6 +54,7 @@
 		background: var(--color-white);
 		padding: 40px;
 	}
+
 }
 
 @media (max-width: 500px) {
@@ -203,5 +208,13 @@
 	.contact-box-1 form .form-col {
 		grid-template-columns: 1fr;
 		gap: 10px;
+	}
+
+	.auth-content .auth-image {
+		display: none;
+	}
+
+	.auth-content .auth-form {
+		padding: 40px 20px;
 	}
 }

@@ -188,6 +188,7 @@ p::selection {
     margin-inline: auto;
 }
 
+
 /* ========================================================================================================== */
 /* homepage styles */
 
@@ -1196,10 +1197,24 @@ p::selection {
     margin-bottom: 10px;
     display: grid;
     gap: 10px;
+    position: relative;
+}
+
+.input-col-alt{
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
 }
 
 .input-col label {
     font-weight: 500;
+}
+
+.input-col i{
+    position: absolute;
+    cursor: pointer;
+    top: 60%;
+    right: 20px;
 }
 
 .form-input {
@@ -1208,10 +1223,22 @@ p::selection {
     border-radius: 8px;
     border: 2px solid var(--border-color);
     width: 100%;
+    background: var(--color-white-alt);
+}
+
+.form-input-alt{
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
 }
 
 .form-input:focus {
     border-color: var(--secondary-color);
+}
+
+.form-input-alt:focus{
+    border-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .form-full-col {
@@ -1255,11 +1282,66 @@ p::selection {
     width: 50px;
     height: 50px;
     border: 2px solid var(--border-color);
-    background: var(--bg-color);
+    background: var(--primary-color);
+    color: var(--color-white);
     border-radius: 8px;
 }
 
 .contact-info-item p {
     color: var(--text-color);
     text-align: center;
+}
+
+
+/* ================================================================================= */
+/* sign up page */
+.auth-content{
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    
+}
+
+.auth-content .auth-image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--color-white);
+    position: relative;
+}
+
+.auth-content .auth-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.auth-content .auth-form{
+    display: grid;
+    gap: 20px;
+    padding: 40px;
+    background: var(--color-white);
+    border-radius: 10px;
+}
+
+.auth-content .auth-form .form-name{
+    text-align: center;
+}
+
+.auth-content .auth-form .form-name h2{
+    font-weight: 600;
+}
+
+
+.hr-grid{
+    display: grid;
+    grid-template-columns: 1fr 45px 1fr;
+    place-items: center;
+}
+.hr-grid hr{
+    width: 100%;
 }

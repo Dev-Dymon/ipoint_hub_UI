@@ -134,176 +134,65 @@
 
 
     <!-- page content -->
-    <div class="main-content mt-80px">
-        <!-- testimonial section -->
-        <div class="testimonial-header">
-            <div class="testimonial-text">
-                <h1>Our Testimonials</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu
-                    sit dignissim lorem
-                    nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+    <div class="main-content">
+        <div class="auth-content mt-80px">
+            <div class="auth-image">
+                <img src="assets/image/119870.jpg" alt="">
+            </div>
+            <div class="auth-form">
+                <div class="form-name">
+                    <h2>Sign Up</h2>
+                    <p>Create an account to be part of us.</p>
+                </div>
+                <form action="" method="POST">
+
+                    <div class="input-col">
+                        <label for="form-input">Full Name</label>
+                        <input type="text" name="fullname" id="form-input" class="form-input"
+                            placeholder="Enter your Name">
+                    </div>
+
+                    <div class="input-col">
+                        <label for="form-input">Email</label>
+                        <input type="email" name="email" id="form-input" class="form-input"
+                            placeholder="Enter your Email">
+                    </div>
+
+                    <div class="input-col">
+                        <label for="form-input">Password</label>
+                        <input type="password" name="password" id="password" class="form-input"
+                            placeholder="Enter your Password">
+                        <i class="fas fa-eye" id="reveal-pass"></i>
+                        <i class="fas fa-eye-slash" id="reveal-pass" style="display: none;"></i>
+                    </div>
+
+                    <div class="input-col-alt">
+                        <input type="checkbox" name="agree" id="form-input-alt" class="form-input-alt">
+                        <p class="p">I agree with <u><a href="#">Terms of Use</a></u> and <u><a
+                                    href="policy.html">Privacy Policy</a></u></p>
+                    </div>
+
+                    <div class="form-full-col">
+                        <div class="input-col">
+                            <button class="btn btn-main">Sign Up</button>
+                        </div>
+                    </div>
+
+                    <div class="hr-grid">
+                        <hr>
+                        <p class="p">OR</p>
+                        <hr>
+                    </div>
+
+                    <div class="input-col">
+                        <center>
+                            <p class="p">Already have an account? <u><a href="login.html">Login</a></u></p>
+                        </center>
+                    </div>
+
+                </form>
             </div>
         </div>
-        <div class="testimonial-section" data-aos="fade-up" data-aos-delay="200" style="margin-top: 20px;">
-
-            <div class="testimonial-list">
-
-                <div class="testimonial-card">
-                    <div class="card-header">
-                        <p>The web design course provided a solid foundation for me. The
-                            instructors were knowledgeable and supportive, and the interactive
-                            learning environment was engaging. I highly recommend it!
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="user-detail">
-                            <div class="user-img">
-                                <img src="assets/image/testimonials/testimonials-1.jpg" alt="" title="user-img">
-                            </div>
-                            <p class="name">John Smith</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="card-header">
-                        <p>The UI/UX design course exceeded my expectations. The instructor s
-                            expertise and practical assignments helped me improve my design
-                            skills. I feel more confident in my career now. Thank you!
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="user-detail">
-                            <div class="user-img">
-                                <img src="assets/image/testimonials/testimonials-2.jpg" alt="" title="user-img">
-                            </div>
-                            <p class="name">Amanda Phillip</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="card-header">
-                        <p>The mobile app development course was fantastic! The step-by-step
-                            tutorials and hands-on projects helped me grasp the concepts easily.
-                            I m now building my own app. Great course!
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="user-detail">
-                            <div class="user-img">
-                                <img src="assets/image/testimonials/testimonials-3.jpg" alt="" title="user-img">
-                            </div>
-                            <p class="name">Rose Phillip</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="card-header">
-                        <p>I enrolled in the graphic design course as a beginner, and it was the
-                            perfect starting point. The instructor s guidance and feedback
-                            improved my design abilities significantly. I m grateful for this course!
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="user-detail">
-                            <div class="user-img">
-                                <img src="assets/image/testimonials/testimonials-4.jpg" alt="" title="user-img">
-                            </div>
-                            <p class="name">Michael K</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="card-header">
-                        <p>The web design course provided a solid foundation for me. The
-                            instructors were knowledgeable and supportive, and the interactive
-                            learning environment was engaging. I highly recommend it!
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="user-detail">
-                            <div class="user-img">
-                                <img src="assets/image/testimonials/testimonials-5.jpg" alt="" title="user-img">
-                            </div>
-                            <p class="name">Alex Stone</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="card-header">
-                        <p>The mobile app development course was fantastic! The step-by-step
-                            tutorials and hands-on projects helped me grasp the concepts easily.
-                            I m now building my own app. Great course!
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="user-detail">
-                            <div class="user-img">
-                                <img src="assets/image/testimonials/testimonials-1.jpg" alt="" title="user-img">
-                            </div>
-                            <p class="name">Donald Simon</p>
-                        </div>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- pagination section -->
-        <div class="course-paination">
-            <div class="page-wrapper">
-                <div class="page"><i class="fa-solid fa-angle-left"></i></div>
-                <div class="page">1</div>
-                <div class="page">2</div>
-                <div class="page"><i class="fa-solid fa-angle-right"></i></div>
-            </div>
-        </div>
-        <!-- testimonial section -->
     </div>
     <!-- page content -->
 
@@ -409,6 +298,29 @@
     <script src="assets/vendor/aos/aos.js"></script>
     <script>
         AOS.init();
+
+        let btn = document.getElementById('reveal-pass');
+        let btn2 = document.querySelector('.fa-eye-slash');
+
+        btn.addEventListener('click', () => {
+            let pass = document.getElementById('password');
+
+            pass.type = 'text';
+            btn.style.display = 'none'
+            btn2.style.display = 'block'
+
+        });
+
+        btn2.addEventListener('click', () => {
+            console.log('clicked');
+
+            let pass = document.getElementById('password');
+
+            pass.type = 'password';
+            btn.style.display = 'block'
+            btn2.style.display = 'none'
+
+        });
     </script>
     <!-- vendor js files -->
 </body>
